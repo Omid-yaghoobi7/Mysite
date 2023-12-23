@@ -104,7 +104,7 @@
 									class="lnr lnr-calendar-full"></span></p>
 							<p class="view col-lg-12 col-md-12 col-6"><a href="#">{{post.counted_views}} Views</a> <span
 									class="lnr lnr-eye"></span></p>
-							<p class="comments col-lg-12 col-md-12 col-6"><a href="#">06 Comments</a> <span
+							<p class="comments col-lg-12 col-md-12 col-6"><a href="#">{% comments_count post.id %} Comments</a> <span
 									class="lnr lnr-bubble"></span></p>
 						</div>
 					</div>
@@ -184,23 +184,7 @@
 							You can unsubscribe at any time
 						</p>
 					</div>
-					<div class="single-sidebar-widget tag-cloud-widget">
-						<h4 class="tagcloud-title">Tag Clouds</h4>
-						<ul>
-							<li><a href="#">Technology</a></li>
-							<li><a href="#">Fashion</a></li>
-							<li><a href="#">Architecture</a></li>
-							<li><a href="#">Fashion</a></li>
-							<li><a href="#">Food</a></li>
-							<li><a href="#">Technology</a></li>
-							<li><a href="#">Lifestyle</a></li>
-							<li><a href="#">Art</a></li>
-							<li><a href="#">Adventure</a></li>
-							<li><a href="#">Food</a></li>
-							<li><a href="#">Lifestyle</a></li>
-							<li><a href="#">Adventure</a></li>
-						</ul>
-					</div>
+					{% include 'blog/blog-tags.html' %}
 				</div>
 			</div>
 		</div>
