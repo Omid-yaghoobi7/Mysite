@@ -48,7 +48,8 @@ INSTALLED_APPS = [
     "taggit",
     "captcha",
     'django_summernote',
-    'blog'
+    'blog',
+    'accounts'
 ]
 
 # Sites framework
